@@ -20,7 +20,7 @@
     </div>
 
     <!-- calender section/ -->
-     <div class="calender">
+    <div class="calender">
 
         <div class="nav-btn-container">
             <!-- navigate between months -->
@@ -35,7 +35,11 @@
 
 
     </div>
-     <!-- modal for add/edit/delete appointment -->
+    <!-- modal for add/edit/delete appointment -->
+    <div class="modal" id="eventModal">
+        <div class="modal-content">
+
+
     <div id="eventSelectorWrapper">
         <label for="eventSelector">
             <!-- will help which event want to edit/ delete -->
@@ -75,6 +79,11 @@
     </form>
 
     <!-- cancel -->
+    <button type="button" class="cancel-btn">Cancel</button>
+        </div>
+    </div>
+
+    <script src="calendar.js"></script>
 
 
 </body>
