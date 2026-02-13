@@ -67,7 +67,16 @@
         <button type="submit">Save Event</button>
     </form>
 
-    
+    <!-- Delete form for task/event -->
+    <form method="POST" onsubmit="return confirm('Are you sure you want to delete this event?');">
+        <input type="hidden" name="action" value="delete">
+        <input type="hidden" name="event_Id" id="deleteEventId">
+        <button type="submit" class="submit-btn">Delete Event 🤾🏾‍♂️</button> 
+    </form>
+
+    <!-- cancel -->
+
+
 </body>
 
 
