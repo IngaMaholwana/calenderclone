@@ -18,7 +18,28 @@
     <div class="clock-container">
         <div id="clock"></div>
     </div>
-    
+
+    <!-- calender section/ -->
+     <div class="calender">
+
+        <div class="nav-btn-container">
+            <!-- navigate between months -->
+             <button class="nav-btn" onclick="" >⏪</button> 
+             <h2 id="month-year" style="margin: 0;"></h2>
+             <button class="nav-btn" onclick="">⏩</button>
+
+        </div>
+
+                 <!-- calendar grid will be generated here -->
+        <div class="calender-grid" id="calender-grid"> </div>
+
+
+    </div>
+     <!-- modal for add/edit/delete appointment -->
+    <div id="eventSelectorWrapper">
+        <label></label>
+    </div>
+
     
 </body>
 
