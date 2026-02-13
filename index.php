@@ -37,8 +37,35 @@
     </div>
      <!-- modal for add/edit/delete appointment -->
     <div id="eventSelectorWrapper">
-        <label></label>
+        <label for="eventSelector">
+            <!-- will help which event want to edit/ delete -->
+            <strong>Select Event:</strong>
+        </label>
+        <select name="" id="eventSelector" onchange="">
+            <option disable selected> Choose Event... </option>
+        </select>
     </div>
+
+    <!-- main form edit or insert events post get thing -->
+
+    <form method ="POST" id="eventForm">
+        <input type="hidden" name="action" id="formAction" value="add">
+        <input type="hidden" name="event_Id" id="eventId" >
+
+        <label for="courseName">Course Title:</label>
+        <input type="text" name="courseName" id="course_name" required>
+
+        <label for="instructorName">instructorName:</label>
+        <input type="text" name="instructor_name" id="instructorName" required>
+
+        <label for="startDate">Start Date:</label>
+        <input type="date" name="start_date" id="startDate" required>
+
+        <label for="endDate">End Date:</label>
+        <input type="date" name="end_date" id="endDate" required>
+
+        <button type="submit">Save Event</button>
+    </form>
 
     
 </body>
